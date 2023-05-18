@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="assets/css/reset.css">
+  <link rel="stylesheet" href="assets/css/index.css">
+  <title>Calculadora Dias Corridos</title>
+</head>
+<body>
+  <main>
+    <h1>Calculadora de datas</h1>
+    <div>
+      <label for="dataInicial">Data Inicial:</label>
+      <input type="date" id="dataInicial" required>
+    </div>
+    
+    <div>
+      <label for="quantidadeDias">Quantidade de Dias:</label>
+      <input type="number" id="quantidadeDias" required>
+    </div>
+
+    <div class="unic">
+      <p class="texto">Deseja contar o dia inicial na soma?</p>
+      <input type="checkbox" id="question" required>
+      <label for="question" class="assinale">Assinale para Sim</label>
+    </div>
+    
+
+    <button onclick="calcularData()">Calcular</button>
+    <div class="resultado">
+      <p id="resultado"></p>
+    </div>
+    
+  </main>
+
+  <script src="assets/js/index.js"></script>
+</body>
+</html>
